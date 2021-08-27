@@ -1,0 +1,33 @@
+-- carro
+
+UPDATE public.carro
+	SET cor='cinza', ano = 2020
+	WHERE id = 1;
+
+
+-- cliente
+
+UPDATE public.cliente
+	SET email = 'chicobioca1@gmail.com', nome = 'Chicozada'
+	WHERE id = 1;
+
+
+-- funcionario
+
+UPDATE public.funcionario
+	SET nome = 'Marlon Almino', tipo_de_funcionario = 'CEO'
+	WHERE id = 1;
+
+
+-- peca
+
+UPDATE public.peca
+	SET estoque = 4, descricao = 'para-choque'
+	WHERE id = 1;
+
+
+-- servico
+
+UPDATE public.servico
+	SET preco = 300, descricao = 'consertar parachoque do sedan'
+	WHERE id = 1;

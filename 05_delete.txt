@@ -1,0 +1,24 @@
+-- carro
+
+DELETE FROM public.carro
+	WHERE id = 1;
+
+-- cliente
+
+DELETE FROM public.cliente
+	WHERE id = 1;
+
+-- funcionario
+
+DELETE FROM public.funcionario
+	WHERE id = 1;
+
+-- peca
+
+DELETE FROM public.peca
+	WHERE id = 1;
+
+-- servico
+
+DELETE FROM public.servico
+	WHERE id = 1;

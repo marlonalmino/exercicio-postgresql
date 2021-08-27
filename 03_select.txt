@@ -1,0 +1,23 @@
+-- carro
+
+SELECT * FROM public.carro
+
+
+-- cliente
+
+SELECT * FROM public.cliente
+
+
+-- funcionario
+
+SELECT * FROM public.funcionario
+
+
+-- peca
+
+SELECT * FROM public.peca
+
+
+-- servico
+
+SELECT * FROM public.servico 

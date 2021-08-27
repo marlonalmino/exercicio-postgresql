@@ -1,0 +1,63 @@
+-- Entidade: carro
+
+CREATE TABLE IF NOT EXISTS public.carro
+(
+    id integer NOT NULL,
+    chassi character varying(50) COLLATE pg_catalog."default" NOT NULL,
+    modelo character varying(100) COLLATE pg_catalog."default" NOT NULL,
+    ano integer NOT NULL,
+    cor character varying(50) COLLATE pg_catalog."default" NOT NULL,
+    CONSTRAINT carro_pkey PRIMARY KEY (id)
+)
+
+
+-- Entidade: cliente
+
+CREATE TABLE IF NOT EXISTS public.cliente
+(
+    id integer NOT NULL,
+    nome character varying(100) COLLATE pg_catalog."default" NOT NULL,
+    cpf character varying(20) COLLATE pg_catalog."default" NOT NULL,
+    endereco character varying(200) COLLATE pg_catalog."default",
+    email character varying(200) COLLATE pg_catalog."default",
+    CONSTRAINT cliente_pkey PRIMARY KEY (id)
+)
+
+
+-- Entidade: funcionario
+
+CREATE TABLE IF NOT EXISTS public.funcionario
+(
+    id integer NOT NULL,
+    nome character varying(200) COLLATE pg_catalog."default" NOT NULL,
+    idade integer,
+    cpf character varying(20) COLLATE pg_catalog."default" NOT NULL,
+    telefone character varying(20) COLLATE pg_catalog."default",
+    tipo_de_funcionario character varying(50) COLLATE pg_catalog."default" NOT NULL,
+    CONSTRAINT funcionario_pkey PRIMARY KEY (id)
+)
+
+
+-- Entidade: peca
+
+CREATE TABLE IF NOT EXISTS public.peca
+(
+    id integer NOT NULL,
+    descricao character varying(200) COLLATE pg_catalog."default" NOT NULL,
+    valor_compra numeric(9,2) NOT NULL,
+    preco numeric(9,2),
+    estoque numeric(9,2),
+    CONSTRAINT peca_pkey PRIMARY KEY (id)
+)
+
+
+-- Entidade: servico
+
+CREATE TABLE IF NOT EXISTS public.servico
+(
+    id integer NOT NULL,
+    descricao character varying(200) COLLATE pg_catalog."default" NOT NULL,
+    data_do_servico date NOT NULL,
+    preco numeric(9,2) NOT NULL,
+    CONSTRAINT servico_pkey PRIMARY KEY (id)
+)

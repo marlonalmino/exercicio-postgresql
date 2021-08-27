@@ -1,0 +1,23 @@
+-- carro
+
+SELECT * FROM public.carro WHERE id = 2;
+
+
+-- cliente
+
+SELECT * FROM public.cliente WHERE id = 2;
+
+
+-- funcionario
+
+SELECT * FROM public.funcionario WHERE id = 2;
+
+
+-- peca
+
+SELECT * FROM public.peca WHERE id = 2;
+
+
+-- servico
+
+SELECT * FROM public.servico WHERE id = 2;

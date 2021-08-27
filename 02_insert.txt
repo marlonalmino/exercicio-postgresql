@@ -1,0 +1,53 @@
+-- carro
+
+INSERT INTO public.carro(
+	id, chassi, modelo, ano, cor)
+	VALUES (1, 'FDMS2314MASD', 'SEDAN', 2014, 'vermelho');
+	
+INSERT INTO public.carro(
+	id, chassi, modelo, ano, cor)
+	VALUES (2, 'MMSMD12432ACCX', 'HILUX', 2018, 'cinza');
+
+	
+-- cliente
+
+INSERT INTO public.cliente(
+	id, nome, cpf, endereco, email)
+	VALUES (1, 'chico bioca', '1234', 'Rua senhora do carmo, 42', 'chicobioca@gmail.com');
+	
+INSERT INTO public.cliente(
+	id, nome, cpf, endereco, email)
+	VALUES (2, 'senhora', '45', 'Rua dolores, 231', 'senhora@gmail.com');
+	
+	
+-- funcionario
+
+INSERT INTO public.funcionario(
+	id, nome, idade, cpf, telefone, tipo_de_funcionario)
+	VALUES (1, 'Marlon', 23, '0782', '88 99774325', 'Dono');
+	
+INSERT INTO public.funcionario(
+	id, nome, idade, cpf, telefone, tipo_de_funcionario)
+	VALUES (2, 'Breno', 24, '0222', '88 99434323', 'Empregado');
+	
+
+-- peca
+
+INSERT INTO public.peca(
+	id, descricao, valor_compra, preco, estoque)
+	VALUES (1, 'parachoque', 300, 350, 5);
+	
+INSERT INTO public.peca(
+	id, descricao, valor_compra, preco, estoque)
+	VALUES (2, 'lanterna traseira', 150, 200, 10);
+	
+
+-- servico
+
+INSERT INTO public.servico(
+	id, descricao, data_do_servico, preco)
+	VALUES (1, 'consertar parachoque', '08-08-2021', 100);
+	
+INSERT INTO public.servico(
+	id, descricao, data_do_servico, preco)
+	VALUES (2, 'polir hilux', '09-09-2021', 150);
